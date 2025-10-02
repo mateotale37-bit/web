@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exportaciones De Productos Guatemaltecos S.A.</title>
+<style>
+* {
+  margin:0; 
+  padding:0;
+  box-sizing:border-box;
+}
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  background-color:#f4f4f4; 
+  color:#333; 
+  line-height:1.6;
+}
+header {
+  background-color:#003366; 
+  color:#fff; 
+  padding:20px 0; 
+  position:relative;
+}
+header h1 {
+  text-align:center; 
+  margin-bottom:10px;
+}
+nav ul {
+  display:flex; 
+  justify-content:center; 
+  list-style:none; 
+  flex-wrap:wrap;
+}
+nav ul li {
+  margin:0 15px;
+}
+nav ul li a {
+  color:#fff; 
+  text-decoration:none; 
+  font-weight:bold;
+}
+nav ul li a:hover {
+  text-decoration:underline;
+}
+.sub {
+  display: block; /* fuerza a que se muestre en una nueva línea el texto de argentea */
+}
+.card-container {
+  display:flex; 
+  flex-wrap:wrap; 
+  justify-content:center; 
+  padding:40px 20px; 
+  gap:30px;
+}
+.card {
+  width:270px; 
+  height:360px; 
+  perspective:1000px;
+}
+.card-inner {
+  position:relative; 
+  width:100%; 
+  height:100%; 
+  transition:transform 0.8s; 
+  transform-style:preserve-3d; 
+  cursor:pointer;
+}
+.card:hover .card-inner {
+  transform:rotateY(180deg);
+}
+.card-front, .card-back {
+  position:absolute; 
+  width:100%; 
+  height:100%; 
+  backface-visibility:hidden; 
+  border-radius:10px; 
+  box-shadow:0 4px 8px rgba(0,0,0,0.1); 
+  display:flex; 
+  flex-direction:column; 
+  align-items:center; 
+  justify-content:flex-start; 
+  padding:20px; 
+  text-align:center; 
+  box-sizing:border-box;
+}
+.card-front {
+  background-color:#fff; 
+  border:2px solid #090a0a; 
+  color:#003366;
+}
+.card-front img {
+  width:100%; 
+  max-height:180px; 
+  object-fit:contain; 
+  border-radius:6px; 
+  margin-bottom:15px;
+}
+.card-front h2 {
+  font-size:1.2rem; 
+  font-weight:bold;
+}
+.card-back {
+  background-color:#003366; 
+  color:#fff; 
+  transform:rotateY(180deg); 
+  justify-content:center; 
+  padding:1.5rem; 
+  overflow-y:auto;
+}
+.card-back h3 {
+  margin-bottom:0.5rem; 
+  font-size:1.1rem; 
+  color:#fff;
+}
+.card-back p {
+  font-size:0.95rem; 
+  line-height:1.4;
+}
+.language-bar {
+  text-align:right; 
+  margin-right:20px; 
+  margin-bottom:10px;
+}
+.language-bar label {
+  color:#fff; 
+  margin-right:8px; 
+  font-weight:600;
+}
+.language-bar select {
+  padding:3px 6px; 
+  border-radius:5px; 
+  border:1px solid #ccc;
+}
+@media (max-width:768px) {.card {width:80%;}}
+@media (max-width:500px) {.card {width:100%;}}
+.en {
+  display:none;
+  }
+</style>
+</head>
+<body>
+
+<!-- Muestra El Encabezado De La Página Web -->
+<header>
+<div class="language-bar">
+  <label for="language-selector">Idioma / Language:</label>
+  <select id="language-selector">
+    <option value="es" selected>Español 🇪🇸</option>
+    <option value="en">English 🇺🇸</option>
+  </select>
+</div>
+
+<!-- Muestra El Título De La Conexión De La Página Web -->
+<h1 class="es">Cacatálogo de Tillandsias</h1>
+<h1 class="en">Tillandsias Catalog</h1>
+
+<!-- Está super bien, pero fíjate que como tengo una barra de navegación donde hay varios apartados, cuando voy al apartado de Servicio, Acerca de Nosotros, y Contacto que están en un mismo código, me muestra de nuevo la imagen y yo quiero que solo aparezca al entrar al sitio web, despúes ya no -->
+<nav>
+      <ul>
+        <li><a href="index.html" class="es">Quiénes Somos</a><a href="index.html" class="en">About Us</a></li>
+        <li><a href="index.html" class="es">Servicios</a><a href="index.html" class="en">Services</a></li>
+        <li><a href="index.html" class="es">Contacto</a><a href="index.html" class="en">Contact Us</a></li>
+        <li><a href="Productos.html" class="es">Productos</a><a href="Productos.html" class="en">Products</a></li>
+        <li><a href="tamaños.html" class="es">Especificaciones</a><a href="tamaños.html" class="en">Specifications</a></li>
+      </ul>
+</nav>
+</header>
+
+<div class="card-container">
+
+<!-- Planta 1 (Argentea Fuchsii) -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="argentea.jpg" alt="T. ARGENTEA (fuchsii)">
+      <h2 class="es">T. ARGENTEA <span class="sub">(fuchsii)</span></h2>
+      <h2 class="en">T. ARGENTEA <span class="sub">(fuchsii)</span></h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. ARGENTEA <span class="sub">(fuchsii)</span></h3>
+      <h3 class="en">T. ARGENTEA <span class="sub">(fuchsii)</span></h3>
+      <p class="es">Hojas filiformes plateadas debido a tricomas densos, base bulbosa. Originaria de Guatemala y México. Luz brillante indirecta. Riego por aspersión 2-3 veces por semana.</p>
+      <p class="en">Silver filamentous leaves due to dense trichomes, bulbous base. Native to Guatemala and Mexico. Bright indirect light. Mist 2-3 times per week.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 2 (Baileyii Pseudobaileyii) -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Baileyii.jpg" alt="T. BAILEYII (pseudobaileyii)">
+      <h2 class="es">T. BAILEYII (pseudobaileyii)</h2>
+      <h2 class="en">T. BAILEYII (pseudobaileyii)</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. BAILEYII (pseudobaileyii)</h3>
+      <h3 class="en">T. BAILEYII (pseudobaileyii)</h3>
+      <p class="es">Hojas curvas, rígidas y base bulbosa, con forma tubular y superficie plateada‑verdosa. Prefiere luz brillante e indirecta, calor moderado y buena ventilación. Riego semanal mediante remojo breve o pulverización, dejando secar por completo entre riegos.</p>
+      <p class="en">Curved, rigid leaves with bulbous base, tubular shape and silvery-green surface. Prefers bright indirect light, moderate warmth and good ventilation. Weekly watering by brief soaking or misting, letting it dry completely between waterings.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 3 (Brachycaulos Multiflora) -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Brachicaulos.jpg" alt="T. BRACHYCAULOS MULTIFLORA">
+      <h2 class="es">T. BRACHYCAULOS MULTIFLORA</h2>
+      <h2 class="en">T. BRACHYCAULOS MULTIFLORA</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. BRACHYCAULOS MULTIFLORA</h3>
+      <h3 class="en">T. BRACHYCAULOS MULTIFLORA</h3>
+      <p class="es">Roseta compacta de hojas gruesas; quiere luz brillante e indirecta; riego frecuente pero sin encharcar, buena ventilación.</p>
+      <p class="en">Compact rosette of thick leaves; prefers bright indirect light; frequent watering but avoid waterlogging, good ventilation.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 4 (Brachycaulos Abdita Velutina) -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Velutina.jpg" alt="T. BRACHYCAULOS ABDITA (velutina)">
+      <h2 class="es">T. BRACHYCAULOS ABDITA (velutina)</h2>
+      <h2 class="en">T. BRACHYCAULOS ABDITA (velutina)</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. BRACHYCAULOS ABDITA (velutina)</h3>
+      <h3 class="en">T. BRACHYCAULOS ABDITA (velutina)</h3>
+      <p class="es">Es una planta epífica de hojas aterciopeladas y compactas, con flores pequeñas violeta o rosa, que crece bien en luz indirecta y requiere riego por aspersión.</p>
+      <p class="en">Is an epiphytic plant with velvety, compact leaves and small violet or pink flowers. It thrives in indirect light and requires misting for watering.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 5 (Butzii) -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Butzii.jpg" alt="T. BUTZII">
+      <h2 class="es">T. BUTZII</h2>
+      <h2 class="en">T. BUTZII</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. BUTZII</h3>
+      <h3 class="en">T. BUTZII</h3>
+      <p class="es">Hojas delgadas y erguidas con tono gris plateado, crece mejor con luz indirecta brillante y buena ventilación. Riego moderado, dejando secar bien entre cada uno.</p>
+      <p class="en">Thin, upright leaves with silvery-gray tone, grows best in bright indirect light with good ventilation. Moderate watering, allowing full drying between waterings.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 6 (Capitata Peach) -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="CAPITATA.png" alt="T. CAPITATA PEACH">
+      <h2 class="es">T. CAPITATA PEACH</h2>
+      <h2 class="en">T. CAPITATA PEACH</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. CAPITATA PEACH</h3>
+      <h3 class="en">T. CAPITATA PEACH</h3>
+      <p class="es">Colores rosados‑durazno en floración; luz brillante indirecta, riego semanal o según sequedad del ambiente; temperatura cálida.</p>
+      <p class="en">Peach-pink colors in bloom; bright indirect light, weekly watering or as environment dries; warm temperature.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 7 (Caput Medusae) -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Caput Medusae.jpg" alt="T. CAPUT MEDUSAE">
+      <h2 class="es">T. CAPUT MEDUSAE</h2>
+      <h2 class="en">T. CAPUT MEDUSAE</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. CAPUT MEDUSAE</h3>
+      <h3 class="en">T. CAPUT MEDUSAE</h3>
+      <p class="es">Planta aérea con hojas gruesas y retorcidas, base bulbosa. Prefiere luz brillante indirecta. Temperaturas entre 18‑30 °C. Riego semanal dando inmersión o nebulizando, permitiendo secado completo.</p>
+      <p class="en">Air plant with thick twisted leaves, bulbous base. Prefers bright indirect light. Temperatures between 18‑30°C. Weekly watering by immersion or misting, allowing complete drying.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 8 (Circinnata Paucifolia) -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Circinnata.jpg" alt="T. CIRCINNATA (paucifolia)">
+      <h2 class="es">T. CIRCINNATA (paucifolia)</h2>
+      <h2 class="en">T. CIRCINNATA (paucifolia)</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. CIRCINNATA (paucifolia)</h3>
+      <h3 class="en">T. CIRCINNATA (paucifolia)</h3>
+      <p class="es">Tiene hojas curvadas formando espiral, textura suave; prefiere luz media‑brillante, riego moderado, secado completo tras humedad.</p>
+      <p class="en">Curved leaves forming a spiral, soft texture; prefers medium-bright light, moderate watering, complete drying after moisture.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 9 (Fasciculata Tricolor) -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Fasciculata Tricolor.jpg" alt="T. FASCICULATA TRICOLOR">
+      <h2 class="es">T. FASCICULATA TRICOLOR</h2>
+      <h2 class="en">T. FASCICULATA TRICOLOR</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. FASCICULATA TRICOLOR</h3>
+      <h3 class="en">T. FASCICULATA TRICOLOR</h3>
+      <p class="es">Posee hojas verdes con rayas blancas, luz brillante indirecta, riego moderado.</p>
+      <p class="en">Green leaves with white stripes, bright indirect light, moderate watering.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 10 (Ionantha Ionantha) -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Ionantha Ionantha.jpg" alt="T. IONANTHA IONANTHA">
+      <h2 class="es">T. IONANTHA IONANTHA</h2>
+      <h2 class="en">T. IONANTHA IONANTHA</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. IONANTHA IONANTHA</h3>
+      <h3 class="en">T. IONANTHA IONANTHA</h3>
+      <p class="es">Es compacta, con hojas verde‑gris que pueden aclararse; le gusta luz brillante, humedad alta, riego frecuente, buen flujo de aire.</p>
+      <p class="en">Compact plant with gray-green leaves that may lighten; likes bright light, high humidity, frequent watering, good airflow.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 11 (Ionantha Rubra) -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Ionantha Rubra.jpg" alt="T. IONANTHA RUBRA">
+      <h2 class="es">T. IONANTHA RUBRA</h2>
+      <h2 class="en">T. IONANTHA RUBRA</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. IONANTHA RUBRA</h3>
+      <h3 class="en">T. IONANTHA RUBRA</h3>
+      <p class="es">Es similar a la Ionantha pero con tonos rojizos al recibir buena luz; requiere luz fuerte indirecta, humedad y riego moderado.</p>
+      <p class="en">Similar to Ionantha but with reddish tones under good light; requires strong indirect light, humidity, and moderate watering.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 12 (Ionantha Scaposa Kolbii) -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Ionantha Scaposa.jpg" alt="T. IONANTHA SCAPOSA (kolbii)">
+      <h2 class="es">T. IONANTHA SCAPOSA (kolbii)</h2>
+      <h2 class="en">T. IONANTHA SCAPOSA (kolbii)</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. IONANTHA SCAPOSA (kolbii)</h3>
+      <h3 class="en">T. IONANTHA SCAPOSA (kolbii)</h3>
+      <p class="es">Es compacta con hojas estrechas, luz brillante indirecta, riego regular dejando secar.</p>
+      <p class="en">Compact with narrow leaves, bright indirect light, regular watering allowing drying.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 13 Juncea -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Juncea.jpg " alt="T. JUNCEA">
+      <h2 class="es">T. JUNCEA</h2>
+      <h2 class="en">T. JUNCEA</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. JUNCEA</h3>
+      <h3 class="en">T. JUNCEA</h3>
+      <p class="es">Con hojas largas y delgadas; tolera la sequedad, necesita mucha luz y buen flujo de aire; riegos ligeros frecuentes.</p>
+      <p class="en">Long, thin leaves; tolerates dryness, needs lots of light and good airflow; light frequent watering.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 14 Juncifolia -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Juncifolia.jpg" alt="T. JUNCIFOLIA">
+      <h2 class="es">T. JUNCIFOLIA</h2>
+      <h2 class="en">T. JUNCIFOLIA</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. JUNCIFOLIA</h3>
+      <h3 class="en">T. JUNCIFOLIA</h3>
+      <p class="es">Esta planta tiene hojas delgadas y largas, prefiere luz intensa y riegos frecuentes.</p>
+      <p class="en">Thin, long leaves; prefers intense light and frequent watering.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 15 Magnusiana -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Magnusiana.jpg" alt="T. MAGNUSIANA">
+      <h2 class="es">T. MAGNUSIANA</h2>
+      <h2 class="en">T. MAGNUSIANA</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. MAGNUSIANA</h3>
+      <h3 class="en">T. MAGNUSIANA</h3>
+      <p class="es">Hojas plumosas, gruesas; luz brillante‑suave, riegos menos frecuentes, mantener a temperatura templada.</p>
+      <p class="en">Feathery, thick leaves; soft bright light, less frequent watering, keep in mild temperatures.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 16 Melanocrater -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Melanocrater.jpg" alt="T. MELANOCRATER TRICOLOR">
+      <h2 class="es">T. MELANOCRATER TRICOLOR</h2>
+      <h2 class="en">T. MELANOCRATER TRICOLOR</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. MELANOCRATER TRICOLOR</h3>
+      <h3 class="en">T. MELANOCRATER TRICOLOR</h3>
+      <p class="es">Hojas oscuras con tonos claros, luz indirecta y riego moderado.</p>
+      <p class="en">Dark leaves with light tones, indirect light and moderate watering.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 17 Oaxacana Feldhoffii -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Oaxacana.jpg" alt="T. OAXACANA (feldhoffii)">
+      <h2 class="es">T. OAXACANA (feldhoffii)</h2>
+      <h2 class="en">T. OAXACANA (feldhoffii)</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. OAXACANA (feldhoffii)</h3>
+      <h3 class="en">T. OAXACANA (feldhoffii)</h3>
+      <p class="es">Roseta gris-plateada, hojas delgadas; crece en altitudes altas, luz brillante, pulverización 2‑3 veces por semana, secado completo entre riegos.</p>
+      <p class="en">Gray-silver rosette, thin leaves; grows at high altitudes, bright light, mist 2‑3 times per week, full drying between watering.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 18 Punctulata Green -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Punctulata Green.jpg" alt="T. PUNCTULATA GREEN">
+      <h2 class="es">T. PUNCTULATA GREEN</h2>
+      <h2 class="en">T. PUNCTULATA GREEN</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. PUNCTULATA GREEN</h3>
+      <h3 class="en">T. PUNCTULATA GREEN</h3>
+      <p class="es">Planta epífita con hojas largas y estrechas, color verde. Luz brillante indirecta, humedad media-alta, riego semanal, secado completo entre riegos.</p>
+      <p class="en">Epiphytic plant with long narrow leaves, green color. Bright indirect light, medium-high humidity, weekly watering, fully dry between watering.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 19 Punctulata Red -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Punctulata Red.jpg" alt="T. PUNCTULATA RED">
+      <h2 class="es">T. PUNCTULATA RED</h2>
+      <h2 class="en">T. PUNCTULATA RED</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. PUNCTULATA RED</h3>
+      <h3 class="en">T. PUNCTULATA RED</h3>
+      <p class="es">Planta epífita con hojas largas y estrechas, verde que puede tornarse rojizo con buena luz. Luz brillante indirecta, humedad media-alta, riego semanal, secado completo entre riegos.</p>
+      <p class="en">Epiphytic plant with long narrow leaves, green that may turn reddish in good light. Bright indirect light, medium-high humidity, weekly watering, fully dry between watering.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 20 Seleriana -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Seleriana.jpg" alt="T. SELERIANA">
+      <h2 class="es">T. SELERIANA</h2>
+      <h2 class="en">T. SELERIANA</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. SELERIANA</h3>
+      <h3 class="en">T. SELERIANA</h3>
+      <p class="es">Hojas finas y verdes, crece bien en luz indirecta y ambientes ventilados. Riego semanal con pulverización.</p>
+      <p class="en">Thin green leaves, grows well in indirect light and ventilated areas. Weekly misting.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 21 Sphaereocephalla -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Sphaerocephalla.jpg" alt="T. SPHAEREOCEPHALLA">
+      <h2 class="es">T. SPHAEREOCEPHALLA</h2>
+      <h2 class="en">T. SPHAEREOCEPHALLA</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. SPHAEREOCEPHALLA</h3>
+      <h3 class="en">T. SPHAEREOCEPHALLA</h3>
+      <p class="es">Hojas rígidas, gris-verde con tricomas visibles; inflorescencia esférica. Luz filtrada, ventilación, riego moderado varias veces por semana.</p>
+      <p class="en">Rigid leaves, gray-green with visible trichomes; spherical inflorescence. Filtered light, ventilation, moderate watering several times per week.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Planta 22 Spanish Moos Usneoides -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="Spanish Moos.jpg" alt="T. SPANISH MOOS (usneoides)">
+      <h2 class="es">T. SPANISH MOOS (usneoides)</h2>
+      <h2 class="en">T. SPANISH MOOS (usneoides)</h2>
+    </div>
+    <div class="card-back">
+      <h3 class="es">T. SPANISH MOOS (usneoides)</h3>
+      <h3 class="en">T. SPANISH MOOS (usneoides)</h3>
+      <p class="es">Planta colgante con hojas delgadas y grises, requiere mucha humedad y sombra parcial. Pulverizar frecuentemente.</p>
+      <p class="en">Hanging plant with thin gray leaves, requires high humidity and partial shade. Mist frequently.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script>
+const selector = document.getElementById('language-selector');
+selector.addEventListener('change', function(){
+    const lang = this.value;
+    document.querySelectorAll('.es').forEach(e=>e.style.display = lang==='es'?'block':'none');
+    document.querySelectorAll('.en').forEach(e=>e.style.display = lang==='en'?'block':'none');
+});
+</script>
+
+</body>
+</html>
