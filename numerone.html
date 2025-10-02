@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exportaciones de Productos Guatemaltecos S.A. EXPROGUASA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primario: #003366;
+      --color-secundario: #f5f7fa;
+      --color-acento: #1e88e5;
+      --color-texto: #333;
+      --fuente-principal: 'Inter', sans-serif;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;
+    }
+    body{
+      font-family:var(--fuente-principal);
+      line-height:1.6;
+      background-color:var(--color-secundario);
+      color:var(--color-texto);
+    }
+    .container{width:90%;max-width:1200px;margin:auto;padding:40px 0;
+    }
+    .language-bar{
+      text-align:right;
+      margin:10px 20px 0 0;
+    }
+    .language-bar label{
+      color:#fff;
+      margin-right:8px;
+      font-weight:600;
+    }
+    .language-bar select{
+      padding:3px 6px;
+      border-radius:5px;
+      border:1px solid #ccc;
+    }
+    header{
+      background-color:var(--color-primario);
+      color:white;
+      padding:30px 0 10px 0;
+      box-shadow:0 2px 4px rgba(0,0,0,0.1);
+    }
+    header h1{
+      text-align:center;
+      font-size:1.8rem;
+      font-weight:700;
+      margin-bottom:10px;
+    }
+    nav ul{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      list-style:none;
+      margin-top:20px;
+    }
+    nav ul li{
+      margin:10px 15px;
+    }
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-weight:600;
+      transition:color 0.3s;
+    }
+    nav ul li a:hover{
+      color:var(--color-acento);
+    }
+    .hero{
+      background:linear-gradient(to right,#e0e7f1,#f2f6fb);
+      padding:80px 20px;
+      text-align:center;
+    }
+    .hero h2{
+      font-size:2.5rem;
+      margin-bottom:20px;
+      color:var(--color-primario);
+    }
+    .hero p{
+      max-width:900px;
+      margin:auto;
+      font-size:1.1rem;
+      color:#444;
+    }
+    section h2{
+      text-align:center;
+      font-size:2rem;
+      margin-bottom:30px;
+      color:var(--color-primario);
+    }
+    .cards-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+    }
+    .card{
+      background-color:white;
+      border:1px solid #ddd;
+      border-radius:10px;
+      padding:25px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.05);
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      height:100%;
+      transition:transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    }
+    .card h3{
+      color:var(--color-primario);
+      margin-bottom:15px;
+      font-size:1.2rem;
+    }
+    .card p{
+      margin-top:10px;
+      font-size:0.98rem;
+      color:#555;
+      flex-grow:1;
+    }
+    .contacto-info p{
+      text-align:center;
+      margin:10px 0;
+      font-size:1rem;
+    }
+    #ubicacion h2{
+      text-align:center;
+      font-size:1.8rem;
+      margin-bottom:10px;
+      color: var(--color-primario);
+    }
+    #ubicacion p
+    {text-align:center;
+      color:#555;
+      font-size:1rem;
+      margin-bottom:20px;
+    }
+    #ubicacion .map-container{
+      text-align:center;
+      max-width:900px;
+      margin:0 auto;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    }
+    #ubicacion .map-container iframe{
+      width:100%;
+      height:350px;
+      border:0;
+    }
+    footer{
+      background-color:var(--color-primario);
+      color:white;
+      text-align:center;
+      padding:25px 0;
+      margin-top:50px;
+    }
+    @media (max-width:768px){header h1{font-size:1.4rem;} .hero h2{font-size:2rem;}}
+    .en { 
+      display: none; 
+    }
+
+  </style>
+
+    <!-- Encabezado -->
+    <header>
+      <div class="language-bar">
+        <label for="language-selector">Idioma / Language:</label>
+        <select id="language-selector">
+          <option value="es" selected>Español 🇪🇸</option>
+          <option value="en">English 🇺🇸</option>
+        </select>
+      </div>
+      <div class="container">
+        <h1 class="es">Exportaciones de Productos Guatemaltecos S.A. EXPROGUASA</h1>
+        <h1 class="en">EXPROGUASA - Guatemalan Products Exporters</h1>
+      </div>
+
+      <!-- Barra de Navegación -->
+      <nav>
+        <ul>
+          <li><a href="#quienes-somos" class="es">Quiénes Somos</a><a href="#quienes-somos" class="en">About Us</a></li>
+          <li><a href="#servicios" class="es">Servicios</a><a href="#servicios" class="en">Services</a></li>
+          <li><a href="#contacto" class="es">Contacto</a><a href="#contacto" class="en">Contact Us</a></li>
+          <li><a href="Productos.html" class="es">Productos</a><a href="Productos.html" class="en">Products</a></li>
+          <li><a href="tamaños.html" class="es">Especificaciones</a><a href="tamaños.html" class="en">Specifications</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Información General -->
+    <section class="hero">
+      <div class="container">
+        <h2 class="es">Tillandsias Exproguasa</h2>
+        <h2 class="en">Exproguasa Tillandsias</h2>
+        <p class="es">Somos una empresa especializada en la producción y exportación de Tillandsias, también conocidas como plantas aéreas. Comprometidos con ofrecer productos de la más alta calidad a los mercados internacionales. Nuestra labor se basa en el respeto por la naturaleza, el cumplimiento de estándares fitosanitarios internacionales y una atención personalizada para cada uno de nuestros socios comerciales. Le invitamos a conocer más sobre quiénes somos, los servicios que ofrecemos y por qué nuestras Tillandsias destacan por su belleza, resistencia y origen sostenible.</p>
+        <p class="en">We are a company specialized in the production and export of Tillandsias, also known as air plants. We are committed to offering products of the highest quality to international markets. Our work is grounded in respect for nature, adherence to international phytosanitary standards, and personalized attention for each of our business partners. We invite you to learn more about who we are, the services we offer, and why our Tillandsias stand out for their beauty, resilience, and sustainable origins.</p>
+      </div>
+    </section>
+
+    <!-- Información Sobre Quiénes Somos -->
+    <section id="quienes-somos">
+      <div class="container">
+        <h2 class="es">Quiénes Somos</h2>
+        <h2 class="en">About Us</h2>
+        <p class="es" style="text-align: center; max-width: 900px; margin: auto;">Somos una empresa con más de 35 años de experiencia en el cultivo, reproducción y venta de Tillandsias originarias de Guatemala. Con presencia comercial en casi todos los continentes, garantizamos sostenibilidad, excelencia en prácticas agrícolas, responsabilidad social y compromiso medioambiental, ofreciendo siempre lo mejor de nuestra producción durante todo el año.</p>
+        <p class="en" style="text-align: center; max-width: 900px; margin: auto;">We are a company with over 35 years of experience in cultivating, propagating, and selling Tillandsias native to Guatemala. With a commercial presence on nearly every continent, we ensure sustainability, excellence in agricultural practices, social responsibility, and environmental commitment, consistently offering the best of our production throughout the year.</p>
+      </div>
+    </section>
+
+    <!-- Información Sobre Nuestros Servicios -->
+    <section id="servicios">
+      <div class="container">
+        <h2 class="es">Servicios</h2>
+        <h2 class="en">Services</h2>
+        <div class="cards-container">
+          <div class="cards-container">
+             <div class="card">
+               <h3 class="es">Cultivo</h3>
+                <h3 class="en">Cultivation</h3>
+                 <p class="es">Nos especializamos en el cultivo responsable y sostenible de Tillandsias. Contamos con instalaciones adecuadas para garantizar un desarrollo saludable de cada planta, aplicando buenas prácticas agrícolas. Nuestro proceso de cultivo asegura la calidad, belleza y resistencia de nuestras especies, cumpliendo con altos estándares internacionales.</p>
+                  <p class="en">We specialize in the responsible and sustainable cultivation of Tillandsias. Our facilities are designed to ensure the healthy growth of each plant, following best agricultural practices. Our cultivation process guarantees the quality, beauty, and resilience of our species while meeting high international standards.</p>
+             </div>
+           <div class="card">
+               <h3 class="es">Reproducción</h3>
+                <h3 class="en">Reproduction</h3>
+                 <p class="es">Ofrecemos servicios de reproducción de Tillandsias mediante técnicas especializadas que aseguran la conservación genética y la estabilidad de cada variedad. Nuestro equipo técnico realiza procesos de propagación tanto sexual como asexual, permitiendo obtener plantas sanas, uniformes y listas para su comercialización o exportación.</p>
+                  <p class="en">We offer Tillandsia propagation services using specialized techniques that ensure genetic conservation and the stability of each variety. Our technical team carries out both sexual and asexual propagation processes, producing healthy, uniform plants ready for commercialization or export.</p>
+             </div>
+           <div class="card">
+               <h3 class="es">Venta</h3>
+                <h3 class="en">Sales</h3>
+                 <p class="es">Comercializamos una amplia variedad de Tillandsias al por mayor, listas para su distribución. Atendemos tanto a empresas como a coleccionistas y viveros, ofreciendo una asesoría personalizada, documentación fitosanitaria y embalaje especializado para garantizar que cada planta llegue en óptimas condiciones a su destino. Nuestra experiencia en exportación nos permite atender con eficiencia y responsabilidad a clientes de todo el mundo.</p>
+                  <p class="en">We wholesale a wide variety of Tillandsias, ready for distribution. We serve companies, collectors, and nurseries, providing personalized guidance, phytosanitary documentation, and specialized packaging to ensure that each plant arrives in optimal condition. Our export experience allows us to serve clients worldwide efficiently and responsibly.</p>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Información Sobre Cómo Contactarnos -->
+    <section id="contacto">
+      <div class="container">
+        <h2 class="es">Contacto</h2>
+        <h2 class="en">Contact</h2>
+        <div class="contacto-info">
+          <p class="es"><strong>Teléfono:</strong> +502 5800-2545</p>
+          <p class="en"><strong>Phone:</strong> +502 5800-2545</p>
+          <p class="es"><strong>Email:</strong> exproguasa@tillandsias.com</p>
+          <p class="en"><strong>Email:</strong> exproguasa@tillandsias.com</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Información Sobre Nuestra Ubicación -->
+<section id="ubicacion">
+   <div class="container">
+     <h2 class="es">Encuéntranos aquí</h2>
+      <h2 class="en">Find us here</h2>
+       <p class="es">Caserío San José, 0-72 (Contiguo a la Escuela) zona 2, San Lucas Sacatepéquez, Sacatepéquez, Guatemala</p>
+        <p class="en">San José Hamlet, 0-72 (Next to the School), Zone 2, San Lucas Sacatepéquez, Sacatepéquez, Guatemala</p>
+         <div class="map-container">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d482.62849127536316!2d-90.66067670128298!3d14.597484369984837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sgt!4v1759164113313!5m2!1ses!2sgt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+           </iframe>
+         </div>
+   </div> 
+</section>
+
+    <!-- Apartado Final -->
+    <footer>
+      <div class="container">
+        <p class="es">&copy; 2025 Tillandsias EXPROGUASA. Todos los derechos reservados.</p>
+        <p class="en">&copy; 2025 Tillandsias EXPROGUASA. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    // Cambio de idioma
+    const selector = document.getElementById('language-selector');
+    selector.addEventListener('change', function(){
+      const lang = this.value;
+      document.querySelectorAll('.es').forEach(e=>e.style.display = lang==='es'?'block':'none');
+      document.querySelectorAll('.en').forEach(e=>e.style.display = lang==='en'?'block':'none');
+    });
+  </script>
+
+</body>
+</html>
